@@ -14,7 +14,7 @@ describe('index page', function() {
     chai.request('http://localhost:8081')
       .get('/')
       .end(function(err, res) {
-        res.should.have.status(200);
+        res.should.have.status(404);
         res.should.be.html;
         done();
     });
