@@ -2,3 +2,4 @@ language: node_js
 node_js: node
 deploy:
   provider: heroku
+  app: radiant-castle-46260
