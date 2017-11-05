@@ -12,7 +12,7 @@ chai.use(chaiHttp);
 describe('index page', function() {
   it('exists', function(done) {
     chai.request(app)
-      .get('/')
+      .get('/index.html')
       .end(function(err, res) {
         res.should.have.status(200);
         res.should.be.html;
