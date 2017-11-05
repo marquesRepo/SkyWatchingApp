@@ -11,8 +11,8 @@ chai.use(chaiHttp);
 
 describe('index page', function() {
   it('exists', function(done) {
-    chai.request(app)
-      .get('/index.html')
+    chai.request('http://localhost:8081')
+      .get('/')
       .end(function(err, res) {
         res.should.have.status(200);
         res.should.be.html;
