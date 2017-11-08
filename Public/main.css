@@ -9,7 +9,8 @@ body *{
 .signInPage{
 	background: url("http://chicagopolicyreview.org/wp-content/uploads/2016/04/space-4.1-CPR.jpg") no-repeat center center fixed;
 	background-size: cover;
-	box-sizing: border-box;	
+	box-sizing: border-box;
+	display: none;	
 }
 .credentialsSection{
 	height:740px;
@@ -39,7 +40,7 @@ p{
 	display: none;
 }
 .profilePage{
-	display:none;
+	
 }
 .header{
 	width: 100%;

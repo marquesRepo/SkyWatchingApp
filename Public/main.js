@@ -7,13 +7,13 @@ function createAccount(){}
 function profilePicture(){}
 	function profileThumbnail(){}
 		function removeThumbnail(){}
-function uploadPicture(){}
+/*function uploadPicture(){}
 	function browsePersonal(){}
 	function uploadButton(){}
 	function personalThumbnail(){}
 		function editPersonalThumbnail(){}
 		function saveChanges(){}
-		function removePersonalThumbnail(){}
+		function removePersonalThumbnail(){}*/
 function account(){}
 	function changePassword(){}
 		function saveChanges(){}
