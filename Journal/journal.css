@@ -1,0 +1,72 @@
+body{	
+	background-image: url("https://www.walldevil.com/wallpapers/w01/429540-galaxy-nebula-outer-space-stars.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.scrollPage{
+	width: 700px;
+	height: 100%;
+	top: 0px;
+	margin:0 auto;
+	background:white;
+}
+.header{
+	width: 700px;
+	height: 100px;
+	top:0px;
+	margin: center;
+	background:black;
+}
+.headerButton{
+	top:40%;
+	left:5px;
+	position: relative;
+	display: inline-block;
+}
+.buttonDetail{
+	background:transparent;
+	color: white;
+	border:transparent;
+	font-family: 'Economica', sans-serif;
+	font-size: 35px;
+	padding-right: 20px;
+}
+.profileImage{
+	height: 50px;
+	width: 50px
+}
+h1{
+	color: white;
+	float: right;
+	font-family: 'Roboto Slab', serif;
+	font-size: 50px;
+	padding-right: 10px;
+}
+.changePassword{
+	height:300px;
+	width: 196px;
+	position: absolute;
+	background-image: url("https://images2.alphacoders.com/756/75680.jpg");
+	background-size: 100% 100%;
+	top: 120px;
+	border: solid;
+	color: white;
+}
+.passwordInput{
+	width: 190px;
+	height: 20px;
+}
+.changePasswordButton{
+	width: 195px;
+	border: purple;
+	background-color: purple;
+	color: white;
+}
+.footer{
+	width: 700px;
+	height: 100px;
+	bottom: 0px;
+	margin: center;
+	background:black;
+	position: absolute;
+}
