@@ -1,0 +1,73 @@
+body{	
+	background-image: url("https://www.walldevil.com/wallpapers/w01/429540-galaxy-nebula-outer-space-stars.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.scrollPage{
+	width: 700px;
+	height: 700px;
+	top: 0px;
+	margin:0 auto;
+	background:white;
+}
+.header{
+	width: 700px;
+	height: 100px;
+	top:0px;
+	margin: center;
+	background:black;
+}
+.headerButton{
+	top:40%;
+	left:5px;
+	position: relative;
+	display: inline-block;
+}
+.buttonDetail{
+	background:transparent;
+	color: white;
+	border:transparent;
+	font-family: 'Economica', sans-serif;
+	font-size: 35px;
+	padding-right: 20px;
+}
+h1{
+	color: white;
+	float: right;
+	font-family: 'Roboto Slab', serif;
+	font-size: 50px;
+	padding-right: 10px;
+}
+h4{
+	color: white;
+	position: relative;
+	top:35%;
+}
+.imageThumbnail{
+	height: 125px;
+	width: 125px;
+	padding-left: 10px;
+}
+.js-results{
+	height: 490px;
+	width: 700px;
+	font-size: 0px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer{
+	width: 700px;
+	height: 100px;
+	bottom: 0px;
+	margin: center;
+	background:black;
+	position: absolute;
+}
+.authorInformation{
+	float:right;
+}
+img{
+	height: 25px;
+	width: 25px;
+}

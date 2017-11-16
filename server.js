@@ -14,6 +14,8 @@ const accountRouter = require("./Account/accountRouter");
 app.use("/account", accountRouter);
 const browserRouter = require("./Browser/browserRouter");
 app.use("/browser", browserRouter);
+const itemModelRouter = require("./Item-Model/itemModelRouter");
+app.use("/itemModel", itemModelRouter);
 //require('dotenv').config();
 
 const morgan = require('morgan');

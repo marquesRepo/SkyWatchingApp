@@ -1,5 +1,4 @@
-var ASTRO_ITEMS = {
-    "astroItems": [
+    {"astroItems": [
         {
             "URL": "http://www.nasa.gov/sites/default/files/images/430453main_crabmosaic_hst_big_full.jpg",
             "title": "Crab Nebula",
@@ -50,24 +49,4 @@ var ASTRO_ITEMS = {
             "title": "Star Collision",
             "description": ""
         }
-    ]
-};
-
-function getRecentStatusUpdates(callbackFn) {
-    setTimeout(function(){ callbackFn(ASRTO_ITEMS)}, 100);
-}
-
-function displayStatusUpdates(data) {
-    for (index in data.astroItems) {
-       $('body').append(
-        '<p>' + data.astroItems[index].text + '</p>');
-    }
-}
-
-function getAndDisplayStatusUpdates() {
-    getRecentStatusUpdates(displayStatusUpdates);
-}
-
-$(function() {
-    getAndDisplayStatusUpdates();
-})
+]}

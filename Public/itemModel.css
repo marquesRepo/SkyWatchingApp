@@ -38,30 +38,9 @@ h1{
 	font-size: 50px;
 	padding-right: 10px;
 }
-h4{
-	color: white;
-	position: relative;
-	top:35%;
-}
-.changePassword{
-	height:300px;
-	width: 196px;
-	position: absolute;
-	background-image: url("https://images2.alphacoders.com/756/75680.jpg");
-	background-size: 100% 100%;
-	top: 120px;
-	border: solid;
-	color: white;
-}
-.passwordInput{
-	width: 190px;
-	height: 20px;
-}
-.changePasswordButton{
-	width: 195px;
-	border: purple;
-	background-color: purple;
-	color: white;
+.js-item{
+	width: 700px;
+	height: 700px;
 }
 .footer{
 	width: 700px;
@@ -77,4 +56,9 @@ h4{
 img{
 	height: 25px;
 	width: 25px;
+}
+h4{
+	color: white;
+	position: relative;
+	top:35%;
 }
