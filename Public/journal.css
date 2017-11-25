@@ -38,25 +38,17 @@ h1{
 	font-size: 50px;
 	padding-right: 10px;
 }
-.changePassword{
-	height:300px;
-	width: 196px;
-	position: absolute;
-	background-image: url("https://images2.alphacoders.com/756/75680.jpg");
-	background-size: 100% 100%;
-	top: 120px;
-	border: solid;
-	color: white;
+.imageThumbnail{
+	height: 125px;
+	width: 125px;
+	padding-left: 10px;
 }
-.passwordInput{
-	width: 190px;
-	height: 20px;
-}
-.changePasswordButton{
-	width: 195px;
-	border: purple;
-	background-color: purple;
-	color: white;
+.js-results{
+	height: 490px;
+	width: 700px;
+	font-size: 0px;
+	display: flex;
+	flex-wrap: wrap;
 }
 .footer{
 	width: 700px;
@@ -77,4 +69,56 @@ h4{
 	color: white;
 	position: relative;
 	top:35%;
+}
+.item-lightbox{
+	position:fixed;
+	top:50%;
+	left: 50%;
+	width:70%;
+	height: 70%;
+	background-color: white;
+	transform:translate(-50%,-50%);
+	z-index: 100;
+	opacity: 1;
+	transition: all .5s;
+}
+.overlay{
+	position: fixed;
+	top:0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,.7);
+	z-index: 50;
+	opacity: 1;
+	transition:  all .5s;
+}
+.lightbox-hidden{
+	top:-100%;
+	opacity: 0;
+}
+.item-image{
+	height: 400px;
+	width: 400px;
+	padding-top: 50px;
+	padding-left: 50px;
+}
+.item-title{
+	height: 50px;
+	width: 50px;
+	color: black;
+}
+.deleteOffJournal{
+	position: absolute;
+	margin-left: 60%;
+	bottom: 15%;
+	height: 20px;
+	width: 200px;
+}
+.item-description{
+	position: absolute;
+	margin-left: 50%;
+	bottom: 23%;
+	height:350px;
+	width: 400px;
 }
