@@ -18,8 +18,8 @@ router.get("/astroitems", (req, res)=>{
 			res.json(astroitems.map(AstroItem=> AstroItem.apiRepr()));
 		})
 });
-router.post('/journal', jsonParser, (req, res) => {
-  const requiredFields = ['URL', 'description'];
+router.post('/journal/:id', jsonParser, (req, res) => {
+  const requiredFields = [];
   for (let i=0; i<requiredFields.length; i++) {
     const field = requiredFields[i];
     if (!(field in req.body)) {

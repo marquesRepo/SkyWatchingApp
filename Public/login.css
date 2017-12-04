@@ -1,4 +1,5 @@
 html, body{
+	height: 100%
 	padding: 0px;
 	margin:0px;
 }
@@ -63,4 +64,16 @@ button{
 	color: white;
 	font-size: 25px;
 	float:right;
+}
+@media screen and (max-width: 450px ){
+	.credentialsSection{
+	height:540px;
+	width:300px;
+	box-sizing: border-box;
+	margin: auto;
+	display: flex;
+	justify-content: center; 
+	align-items:center;
+	flex-direction: column;
+}
 }

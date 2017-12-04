@@ -16,4 +16,9 @@ router.get("/journalitem", (req, res)=>{
 			res.json(journalitem.map(ClientItem=> ClientItem.apiRepr()));
 		})
 });
+router.delete('/jounalitem/:id', (req, res) => {
+  ClientItem.delete(req.params.id);
+  console.log(`Deleted item \`${req.params.id}\``);
+  res.status(204).end();
+});
 module.exports= router;

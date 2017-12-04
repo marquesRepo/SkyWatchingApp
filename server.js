@@ -15,6 +15,8 @@ const accountRouter = require("./Account/accountRouter");
 app.use("/account", accountRouter);
 const browserRouter = require("./Browser/browserRouter");
 app.use("/browser", browserRouter);
+const userRouter = require("./Authentication/userRouter");
+app.use("/user", userRouter);
 app.use(morgan('common'));
 
 const jsonParser = bodyParser.json();
