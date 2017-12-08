@@ -7,7 +7,7 @@ const {DATABASE_URL, PORT} = require('./config');
 const app = express();
 app.use(express.static('Public'));
 app.use(bodyParser.json());
-const authenticationRouter = require("./authentication/authenticationRouter");
+const authenticationRouter = require("./Authentication/authenticationRouter");
 app.use("/authentication", authenticationRouter);
 const journalRouter = require("./Journal/journalRouter");
 app.use("/journal", journalRouter);
