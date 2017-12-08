@@ -73,7 +73,7 @@ describe('journalitem', function() {
 });
 describe('astroitem', function() {
 it('should add an item on POST', function() {
-  const newItem = {desciption: {".description"}, URL: {".url"}};
+  const newItem = {desciption: "", URL: ""};
   chai.request(app)
     .post('/journalitem')
     .send(newItem)
