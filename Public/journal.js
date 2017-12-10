@@ -7,7 +7,7 @@ const clientData = "/journal/journalitem"
 	});
 
 	function renderResult(result){
-			result.clientUpdates.forEach((item)=>{
+			result.forEach((item)=>{
 		console.log(item)
 			$(".js-results").append(`<div class="masterItem">
 				<a class="thumbnailLink" href="#" data-image="${item.URL}" data-title="${item.title}" data-description="${item.description}">
@@ -27,7 +27,7 @@ function showItem(){
 		$(".item-lightbox").removeClass("lightbox-hidden")
 		$(".overlay").removeClass("lightbox-hidden")
 	})
-	$(".deleteOffJournal").on("click", function(){
+	$(".exitButton").on("click", function(){
 		$(".item-lightbox").addClass("lightbox-hidden")
 		$(".overlay").addClass("lightbox-hidden")
 	})

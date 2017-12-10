@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const path = require("path");
 const {AstroItem} = require("./browserModel")
+const {ClientItem} = require("../Journal/journalModel")
 const bodyParser = require('body-parser');
 const jsonParser = bodyParser.json();
 router.get("/", (req, res)=>{
@@ -34,10 +35,10 @@ router.post('/journal/:id', jsonParser, (req, res) => {
     return res.status(400).send(message);
   }
   console.log(`Updating shopping list item \`${req.params.id}\``);
-  clientUpdates.update({
+  ClientItem.create({
     id: req.params.id,
-    name: req.body.name,
-    budget: req.body.budget
+    URL: req.body.URL,
+    description: req.body.description
   });
   res.status(204).end();
 });

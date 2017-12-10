@@ -47,6 +47,10 @@ function showItem(){
 		$(".item-lightbox").addClass("lightbox-hidden")
 		$(".overlay").addClass("lightbox-hidden")
 	})
+		$(".exitButton").on("click", function(){
+		$(".item-lightbox").addClass("lightbox-hidden")
+		$(".overlay").addClass("lightbox-hidden")
+	})
 }
 function saveItem(){
 	console.log("HOWDY")
@@ -60,15 +64,13 @@ function saveItem(){
 		$.ajax({
 			url: POST_API + current_Item.id,
 			type:"post",
-			dataType:"json",
-			data: {
+			contentType:"application/json",
+			data: JSON.stringify({
 				id:current_Item.id,
 				URL: current_Item.image,
 				description:description
-			},
+			}),
 			success: function(response){
-				console.log(response);
-				description.val("");
 			}
 		});
 	});
