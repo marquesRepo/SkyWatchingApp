@@ -8,7 +8,7 @@ const config = require('../config');
 const router = express.Router();
 const path = require("path");
 router.get("/", (req, res)=>{
-	res.sendfile(path.join(__dirname + "/login.html"));
+	res.sendfile(path.join(__dirname + "/index.html"));
 });
 
 const createAuthToken = function(user) {
@@ -21,7 +21,7 @@ const createAuthToken = function(user) {
 
 const localAuth = passport.authenticate('local', {session: false});
 router.use(bodyParser.json());
-router.post('/login', localAuth, (req, res) => {
+router.post('/index', localAuth, (req, res) => {
   const authToken = createAuthToken(req.user.apiRepr());
   res.json({authToken});
 });
