@@ -19,7 +19,7 @@ chai.use(chaiHttp);
         done();
     });
   });
-});*/
+});
 describe('users', function() {
   it('should list users on GET', function(done) {
     chai.request('http://localhost:8080/users')
@@ -70,7 +70,7 @@ describe('journalitem', function() {
        });
     });
   });
-});
+});*/
 describe('astroitem', function() {
 it('should add an item on POST', function() {
   const newItem = {desciption: "", URL: ""};
