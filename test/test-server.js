@@ -20,7 +20,7 @@ describe('index page', function() {
     });
   });
 });
-describe('users', function() {
+/*describe('users', function() {
   it('should list users on GET', function(done) {
     chai.request('http://localhost:8080/users')
       .get('/users')
@@ -86,4 +86,4 @@ it('should add an item on POST', function() {
       res.body.should.deep.equal(Object.assign(newItem, {id: res.body.id}));
     	});
 	});
-});
+});*/
