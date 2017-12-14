@@ -86,4 +86,4 @@ it('should add an item on POST', function() {
       res.body.should.deep.equal(Object.assign(newItem, {id: res.body.id}));
     	});
 	});
-});*/
+});
