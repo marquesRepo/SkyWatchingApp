@@ -9,7 +9,7 @@ var storage = server.storage;
 chai.use(chaiHttp);
 
 
-describe('index page', function() {
+/*describe('index page', function() {
   it('exists', function(done) {
     chai.request('http://localhost:8080')
       .get('/')
@@ -19,8 +19,8 @@ describe('index page', function() {
         done();
     });
   });
-});
-/*describe('users', function() {
+});*/
+describe('users', function() {
   it('should list users on GET', function(done) {
     chai.request('http://localhost:8080/users')
       .get('/users')
