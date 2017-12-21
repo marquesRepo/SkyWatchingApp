@@ -4,5 +4,6 @@ before_script: chmod 0777 ./node_modules/.bin/mocha
 deploy:
   provider: heroku
   app: radiant-castle-46260
+  api_key: 290aa0ad-9f73-44cf-98b5-8360b9a3f6eb
 services:
   - mongodb
